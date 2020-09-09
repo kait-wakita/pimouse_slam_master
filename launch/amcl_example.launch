@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find pimouse_slam_master)/maps/map-apt.yaml" />
+    <include file="$(find amcl)/examples/amcl_diff.launch" />
+</launch>
